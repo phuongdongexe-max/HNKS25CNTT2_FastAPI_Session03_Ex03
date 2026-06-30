@@ -68,6 +68,5 @@ def get_max_books():
     
 @app.get('/books/sort')
 def sort_books_list():
-    books.sort(key = lambda book: book['year'])
     books[::-1]
     return books
